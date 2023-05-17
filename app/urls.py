@@ -4,4 +4,6 @@ from app import views
 urlpatterns = [
     # path('', views.home, name='home'),
     path('maker/', views.Maker.as_view(), name='maker'),
+    path('reviwer/', views.Reviwer.as_view(), name='reviwer'),
+    
 ]
