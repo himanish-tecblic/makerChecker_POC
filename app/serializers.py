@@ -4,7 +4,7 @@ from app.models import Agreement, Review
 class agreementSerializer(serializers.ModelSerializer):
     class Meta:
         model = Agreement
-        fields = "__all__"
+        fields = ["title", "content", "creator"]
 
 
 class reviewSerializer(serializers.ModelSerializer):

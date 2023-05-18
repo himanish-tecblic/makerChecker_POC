@@ -13,6 +13,7 @@ class User(models.Model):
     
     
 class Agreement(models.Model):
+    id = models.IntegerField(primary_key=True)
     title = models.CharField(max_length=100)
     content = models.TextField()
     creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='agreements')
